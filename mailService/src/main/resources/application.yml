@@ -1,6 +1,13 @@
 spring:
   application:
     name: Mail Service
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: username
+    password: password
+    ssl:
+      enabled: true
 
 server:
   port: 8082
