@@ -5,11 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+import java.io.Serializable;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class EmailRequest {
+@Data
+public class EmailRequest implements Serializable {
     private String to;
     private String subject;
     private String body;
